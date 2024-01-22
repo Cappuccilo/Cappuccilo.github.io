@@ -11,7 +11,7 @@ tags:
 - 零成本
 - Hexo
 title: 使用Github Pages + Hexo零成本搭建个人博客
-updated: '2024-01-22T13:03:13.072+08:00'
+updated: '2024-01-22T14:57:21.139+08:00'
 ---
 ## 前言
 
@@ -238,6 +238,8 @@ tags:
 ### 更换主题
 
 Hexo[主题商店](https://hexo.io/themes/)中提供了400+种博客主题供你选择，选择一个你喜欢的主题，参考主题说明文档以使用主题。
+
+本站点使用的主题为[hexo-theme-redefine](https://github.com/EvanNotFound/hexo-theme-redefine)，如需安装此主题，参考[主题文档](https://redefine-docs.ohevan.com/getting-started)。
 
 ## 总结
 
