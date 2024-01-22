@@ -11,8 +11,20 @@ tags:
 - 零成本
 - Hexo
 title: 使用Github Pages + Hexo零成本搭建个人博客
-updated: '2024-01-20T11:46:46.136+08:00'
+updated: '2024-01-22T13:03:13.072+08:00'
 ---
+## 前言
+
+闲来无事用Github Pages + Hexo捣鼓了一个个人博客，分享一下搭建过程。
+
+### GitHub Pages 是什么？
+
+[GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages) 是由 GitHub 官方提供的免费的静态站点托管服务，让我们可以在 GitHub 仓库里托管和发布自己的静态网站页面。
+
+### Hexo 是什么？
+
+[Hexo](https://hexo.io/zh-cn/) 是一个快速、简洁且高效的静态博客框架，它基于 Node.js 运行，可以将我们撰写的 Markdown 文档解析渲染成静态的 HTML 网页。
+
 ## 准备工作
 
 为了搭建自己的个人博客，你需要首先做好以下准备工作：
@@ -117,7 +129,7 @@ jobs:
         uses: actions/deploy-pages@v2
 ```
 
-3. 在第一步的终端界面依次键入以下命令
+3. 在第一步的终端界面依次键入以下命令：
 
 ```bash
 git init
@@ -135,6 +147,98 @@ git push -u origin main
 
 4. 静待片刻，打开你的浏览器，访问 `<你的 GitHub 用户名>.github.io`就可以看到你的页面啦！
 
+## 开始使用
+
+使用[VS Code](https://code.visualstudio.com/)(你也可以使用其他你习惯使用的编辑器)打开博客项目文件夹，我们可以看到以下目录结构：
+
+![https://s2.loli.net/2024/01/22/j1kwmnV6AHRIP5r.png](https://s2.loli.net/2024/01/22/j1kwmnV6AHRIP5r.png)
+
+```plaintext
+.
+│--.github
+│  `-- workflows
+|-- _config.landscape.yml   # Hexo默认主题的配置文件
+|-- _config.yml             # Hexo网站的配置信息
+|-- db.json
+|-- package-lock.json
+|-- package.json
+|-- scaffolds               # 模板文件夹
+|   |-- draft.md
+|   |-- page.md
+|   `-- post.md
+|-- source                  # 用来存放用户资源
+|   `-- _posts              # 用来存放已发布的博客
+|       `-- hello-world.md  # Hexo初始化时生成的第一篇示例博客
+|-- themes                  # 主题文件夹
+`-- yarn.lock
+```
+
+对于博客的任意更改（修改配置、更换主题、新增及编辑文章等），将更改推送到Github，静待片刻，即可在你的博客页面看到变更。在博客项目文件夹打开终端，使用以下命令推送更改到Github：
+
+```bash
+git add .
+
+git commit -m "变更内容描述"
+
+git push -u origin main
+```
+
+### 网站设置
+
+编辑`_config.yml`文件以修改博客网站的标题、描述、作者名、网站语言等，详见[Hexo官方配置文档](https://hexo.io/zh-cn/docs/configuration)。
+
+{% notel blue 提示 %}
+
+修改yml文件请注意不要改变每行前面的缩进，仅在冒号后修改内容，且在冒号与内容之间添加一个空格
+
+{% endnotel %}
+
+### 发布文章
+
+{% tabs 创建文章文件 %}
+
+<!-- tab 使用hexo命令创建文章 -->
+
+在VS Code中使用快捷键`Ctrl`+`` ` ``（数字键1左边的键）打开终端窗口，键入命令：
+
+```bash
+hexo new "<文件名>"
+```
+
+这时你会发现`source\_posts`文件夹下出现了一个名为`<文件名>.md`的文件，打开这个文件就可以开始撰写你的文章了。
+
+![https://s2.loli.net/2024/01/22/E6wrj2YlstdeNgD.png](https://s2.loli.net/2024/01/22/E6wrj2YlstdeNgD.png)
+
+<!-- endtab -->
+
+<!-- tab 手动创建文章 -->
+
+在`source\_posts`文件夹下直接新建文件`<文件名>.md`，手动在文件开头加入如下格式Front-matter内容，然后就可以开始撰写你的文章了。
+
+```markdown
+---
+title: 文章标题
+date: 2024/1/22 13:00:00
+categories:
+- <文章分类>
+tags:
+- <标签1>
+- <标签2>
+---
+```
+
+<!-- endtab -->
+
+{% endtabs %}
+
+在上面创建的文件中，你会注意到文件前有以`---`分割的区域，这是用来指定文章属性的，如标题、创建日期、更新日期、标签、分类等，详见[Hexo](https://hexo.io/zh-cn/docs/front-matter)。
+
+在该区域之后，就是撰写博客正文的地方。Hexo使用[Markdown语法](https://markdown.com.cn/basic-syntax/)来撰写文章。
+
+### 更换主题
+
+Hexo[主题商店](https://hexo.io/themes/)中提供了400+种博客主题供你选择，选择一个你喜欢的主题，参考主题说明文档以使用主题。
+
 ## 总结
 
 这篇文章中，我们完成了以下工作：
@@ -143,4 +247,4 @@ git push -u origin main
 - 创建了博客项目
 - 部署我们的博客项目到GitHub Pages
 
-至此，我们可以通过GitHub的二级域名来访问我们的博客了。下一篇我们来聊聊如何美化及使用我们的博客
+至此，我们可以通过GitHub的子域名来访问我们的博客了。但是由于GitHub服务器在国外，外加某些原因，我们在访问github.io时感到会有些缓慢，有时甚至会偶尔无法访问。那么有没有解决办法呢？当然有，下一篇文章我们来聊聊如何加速访问我们的博客。
