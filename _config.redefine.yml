@@ -11,7 +11,7 @@
 # Docs: https://redefine-docs.ohevan.com/basic/info
 info:
   # Site title
-  title: 卡布奇洛的个人小站
+  title: 卡布奇洛的咖啡店
   # Author name
   author: Cappuccilo
   # Site URL
@@ -114,7 +114,7 @@ home_banner:
     light: /images/wallhaven-wqery6-light.webp # light mode
     dark: /images/wallhaven-wqery6-dark.webp # dark mode
   # Home banner title
-  title: 卡布奇洛的个人小站
+  title: 卡布奇洛的咖啡店
   # Home banner subtitle
   subtitle:
     text: ['Loading...'] # subtitle text, array
@@ -229,7 +229,7 @@ home:
     enable: true # Whether to enable sidebar
     position: left # Sidebar position. left, right
     first_item: info # First item in sidebar. menu, info
-    announcement: EL PSY CONGROO # Announcement text
+    announcement: 你会不会忽然的出现，在街角的咖啡店 # Announcement text
     links:
       归档: 
         path: /archives 
