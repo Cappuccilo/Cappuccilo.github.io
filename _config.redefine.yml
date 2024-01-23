@@ -94,7 +94,7 @@ fontawesome: # Pro v6.2.1
   # Thin version
   thin: false
   # Light version
-  light: false
+  light: true
   # Duotone version
   duotone: false
   # Sharp Solid version
@@ -198,6 +198,9 @@ navbar:
     说说:
       path: /talks
       icon: fa-regular fa-comment-smile
+    友链: 
+      icon: fa-light fa-user-group
+      path: /links
     About: 
       icon: fa-regular fa-user
       path: /about

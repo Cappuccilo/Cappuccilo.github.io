@@ -187,11 +187,11 @@ git push -u origin main
 
 编辑`_config.yml`文件以修改博客网站的标题、描述、作者名、网站语言等，详见[Hexo官方配置文档](https://hexo.io/zh-cn/docs/configuration)。
 
-{% notel blue 提示 %}
+{% note info %}
 
 修改yml文件请注意不要改变每行前面的缩进，仅在冒号后修改内容，且在冒号与内容之间添加一个空格
 
-{% endnotel %}
+{% endnote %}
 
 ### 发布文章
 

@@ -26,11 +26,11 @@ updated: '2024-01-23T09:04:28.429+08:00'
 
 ![https://s2.loli.net/2024/01/22/GZKtCMD8X9xdpBy.png](https://s2.loli.net/2024/01/22/GZKtCMD8X9xdpBy.png)
 
-{% notel blue 提示 %}
+{% note info %}
 
 在选好域名结账时，可以添加优惠码获得一些优惠，使用搜索引擎直接搜索`NameSilo优惠码`可以找到不少优惠码
 
-{% endnotel %}
+{% endnote %}
 
 ## 为Github Pages配置自定义域名
 
@@ -38,11 +38,11 @@ Github的配置很简单，只要打开你的`<用户名>.github.io`的仓库，
 
 ![https://s2.loli.net/2024/01/23/bJNj5BQWi91LgsT.png](https://s2.loli.net/2024/01/23/bJNj5BQWi91LgsT.png)
 
-{% notel blue 提示 %}
+{% note info %}
 
 这里Github可能会提示需要配置DNS解析记录，如果不需要配置CDN可以按照这个配置从而省略下面的步骤，但是这样仅仅是配置好了自定义域名，不会有CDN加速功能，为了接入CDN，我们可以不管Github的提示。
 
-{% endnotel %}
+{% endnote %}
 
 ## 配置CDN（内容分发网络）
 
@@ -90,11 +90,11 @@ Github的配置很简单，只要打开你的`<用户名>.github.io`的仓库，
 
 ![https://s2.loli.net/2024/01/23/IuRHOpFdco4BK2a.png](https://s2.loli.net/2024/01/23/IuRHOpFdco4BK2a.png)
 
-{% notel blue 提示 %}
+{% note info %}
 
 另一栏缓存天数可以按需修改，好处是时间越大CDN流量消耗越小，但坏处是如果网站内容有调整，用户看到的可能还是缓存的版本，不过好在我们也可以手动刷新缓存。我这里调整为2天。
 
-{% endnotel %}
+{% endnote %}
 
 后续点击下方按钮`跳过推荐配置`即可。
 
