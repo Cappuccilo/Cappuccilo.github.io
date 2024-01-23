@@ -241,7 +241,7 @@ Hexo[主题商店](https://hexo.io/themes/)中提供了400+种博客主题供你
 
 本站点使用的主题为[hexo-theme-redefine](https://github.com/EvanNotFound/hexo-theme-redefine)，如需安装此主题，参考[主题文档](https://redefine-docs.ohevan.com/getting-started)。
 
-{% folding blue::Folding 进阶： 使用Qexo可视化后台管理你的博客 %}
+{% folding blue::进阶： 使用Qexo可视化后台管理你的博客 %}
 
 [Qexo | 一个美观、强大的在线 静态博客 管理器 (oplog.cn)](https://www.oplog.cn/qexo/)
 
