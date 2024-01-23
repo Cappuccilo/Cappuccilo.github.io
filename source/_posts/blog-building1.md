@@ -11,7 +11,7 @@ tags:
 - 零成本
 - Hexo
 title: 使用Github Pages + Hexo零成本搭建个人博客
-updated: '2024-01-22T14:57:21.139+08:00'
+updated: '2024-01-23T10:34:34.910+08:00'
 ---
 ## 前言
 
@@ -240,6 +240,16 @@ tags:
 Hexo[主题商店](https://hexo.io/themes/)中提供了400+种博客主题供你选择，选择一个你喜欢的主题，参考主题说明文档以使用主题。
 
 本站点使用的主题为[hexo-theme-redefine](https://github.com/EvanNotFound/hexo-theme-redefine)，如需安装此主题，参考[主题文档](https://redefine-docs.ohevan.com/getting-started)。
+
+{% folding blue::Folding 进阶： 使用Qexo可视化后台管理你的博客 %}
+
+[Qexo | 一个美观、强大的在线 静态博客 管理器 (oplog.cn)](https://www.oplog.cn/qexo/)
+
+部署完成后，你可以通过浏览器可视化管理你的个人博客：
+
+![image](https://pic.hipyt.cn/pic/2023/08/21/19f6917e23b08.png)
+
+{% endfolding %}
 
 ## 总结
 
