@@ -7,8 +7,8 @@ tags:
 - ffmpeg
 - safari
 - html
-title: 记录解决safari浏览器无法正常播放html的video标签的问题
-updated: '2024-01-29T09:36:56.373+08:00'
+title: 记录一次safari浏览器无法正常播放html的video标签的问题
+updated: '2024-01-29T10:11:27.023+08:00'
 ---
 ## 问题描述
 
