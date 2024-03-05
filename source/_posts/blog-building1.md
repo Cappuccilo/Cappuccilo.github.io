@@ -2,7 +2,7 @@
 abbrlink: 个人博客搭建
 categories:
 - - 博客搭建
-cover: https://s2.loli.net/2024/01/19/FfEG5xSNcvHqL86.png
+cover: https://s2.loli.net/2024/03/05/kBTUOblQWFzGqLh.jpg
 date: '2024-01-19T13:21:38.939361+08:00'
 tags:
 - Github

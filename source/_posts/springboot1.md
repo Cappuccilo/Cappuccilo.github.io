@@ -1,7 +1,8 @@
 ---
 abbrlink: ''
 categories:
-- - java
+- [后端, java]
+cover: https://s2.loli.net/2024/03/05/r1p9QTwxfskjqI5.jpg
 date: '2024-03-05T09:54:22.165582+08:00'
 excerpt: 这篇文章介绍了在SpringBoot框架下如何将Java应用程序打包成Jar包并运行，以及在打包时如何分离项目的依赖来减小Jar包的体积。文章中提到了如何在项目的build.gradle文件中添加bootJar内容以将项目打包为Jar包，并且给出了在Windows和Linux下使用Jar包的命令。同时，文章还介绍了如何将项目依赖的jar复制到lib目录中，并修改bootJar的配置来控制Jar包名称、版本和排除其他jar文件。
 tags:

@@ -2,7 +2,7 @@
 abbrlink: ''
 categories:
 - - 博客搭建
-cover: https://s2.loli.net/2024/01/23/uOJZ3pFyzxADRo2.png
+cover: https://s2.loli.net/2024/03/05/cebTfmqjk8IxrgM.jpg
 date: '2024-01-22T16:34:33.634564+08:00'
 tags:
 - Github Pages
