@@ -31,7 +31,7 @@ bootJar {
 
 {% tabs 部署Jar包 %}
 
-`<!-- tab windows下运行Jar包 -->`
+<!-- tab windows下运行Jar包 -->
 
 在windows下我们这样运行这个项目：
 
@@ -39,9 +39,9 @@ bootJar {
 java -jar xxx.jar
 ```
 
-`<!-- endtab -->`
+<!-- endtab -->
 
-`<!-- tab Linux下运行Jar包 -->`
+<!-- tab Linux下运行Jar包 -->
 
 而在Linux下可以使用软连接的方式更方便地管理Jar包：
 
@@ -56,7 +56,7 @@ java -jar xxx.jar
   service <自定义项目名称> start/restart/status/stop
   ```
 
-`<!-- endtab -->`
+<!-- endtab -->
 
 {% endtabs %}
 
