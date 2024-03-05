@@ -11,8 +11,8 @@ comment: true
 
 ## 技能专长
 
-- **编程语言**：Java, Python, JavaScript, SQL
-- **框架/技术**  Spring Boot, Mybatis, Vue.js
-- **工具**：Git, Docker, Jenkins, SonarQube
-- **数据库**：MySQL, SQL Server, Oracle, PostgreSQL, SQLite, Redis, Hive, Cassandra
+- **编程语言**：Java, Python, JavaScript, SQL, TypeScript
+- **框架/技术**:  Spring Boot, Mybatis, Vue.js, html, css
+- **工具**：Git, Docker, Jenkins, SonarQube, nginx, tomcat, gradle, maven
+- **数据库**：MySQL, SQL Server, Oracle, PostgreSQL, SQLite, Redis, Hive, Cassandra, 达梦
 - **其他**：Linux, Shell, Vim, Markdown
