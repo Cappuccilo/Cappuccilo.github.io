@@ -29,6 +29,8 @@ bootJar {
 
 而后使用Gradle的 `bootJar`命令即可将项目打包为Jar包。
 
+![image.png](https://s2.loli.net/2024/03/05/KpOPzZvJxaHDfNQ.png)
+
 {% tabs 部署Jar包 %}
 
 <!-- tab windows下运行Jar包 -->
@@ -123,9 +125,14 @@ bootJar {
         attributes "Manifest-Version": 1.0,
                 'Class-Path': configurations.compileClasspath.files.collect { "lib/$it.name" }.join(' ')
     }
+    launchScript()
 }
 ```
 
 {% endfolding %}
 
-然后重新执行bootJar命令，你会发现打包的项目分为了一个lib文件夹和一个Jar文件，其中lib文件夹下是该项目的依赖包，如果项目依赖没有变化，则重新上传到服务器时不需要重复上传这个文件夹，仅仅上传Jar文件即可。
+然后重新执行bootJar命令，可以发现打包的项目分为了一个lib文件夹和一个Jar文件，其中lib文件夹下是该项目的依赖包，将lib文件夹和Jar文件一起上传到服务器运行即可（保持lib文件夹与Jar文件同级）。
+
+![image.png](https://s2.loli.net/2024/03/05/flHBzd9nQT71YyD.png)
+
+后续部署时，如果仅仅项目代码有变化而项目依赖没有变化，则重新上传到服务器时不需要重复上传这个文件夹，仅仅上传Jar文件即可。
