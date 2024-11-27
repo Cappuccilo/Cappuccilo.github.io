@@ -12,6 +12,8 @@
 info:
   # Site title
   title: 卡布奇洛的咖啡店
+  # Site subtitle
+  subtitle: 你会不会突然地出现，在街角的咖啡店
   # Author name
   author: Cappuccilo
   # Site URL
@@ -46,7 +48,7 @@ colors:
 # SITE CUSTOMIZATION >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/basic/global
 global:
-  # Custom fonts
+  # Custom global fonts
   fonts:
     # Chinese fonts
     chinese: 
@@ -332,7 +334,9 @@ articles:
     default: cc_by_nc_sa # Default license, can be cc_by_nc_sa, cc_by_nd, cc_by_nc, cc_by_sa, cc_by, all_rights_reserved, public_domain
   # Whether to enable lazyload for images
   lazyload: true
-  # Article recommendation. Requires nodejieba (npm install nodejieba). Transplanted from hexo-theme-volantis.
+  # Pangu.js (automatically add space between Chinese and English). See https://github.com/vinta/pangu.js
+  pangu_js: false
+    # Article recommendation. Requires nodejieba (npm install nodejieba). Transplanted from hexo-theme-volantis.
   recommendation:
     # Whether to enable article recommendation
     enable: false
@@ -365,6 +369,7 @@ comment:
       emoji: ['//unpkg.com/@waline/emojis@1.2.0/alus','//unpkg.com/@waline/emojis@1.2.0/bilibili','//unpkg.com/@waline/emojis@1.2.0/bmoji','//unpkg.com/@waline/emojis@1.2.0/qq','//unpkg.com/@waline/emojis@1.2.0/tieba','//unpkg.com/@waline/emojis@1.2.0/tw-emoji','//unpkg.com/@waline/emojis@1.2.0/weibo'] # Waline emojis, see https://waline.js.org/guide/features/emoji.html
       recaptchaV3Key: 6LfvoVYpAAAAAJkfUU8I78hBnbjaMW5_9mbjpYKz # Google reCAPTCHA v3 key. See https://waline.js.org/reference/client/props.html#recaptchav3key
       turnstileKey: # Turnstile key. See https://waline.js.org/reference/client/props.html#turnstilekey
+      reaction: false # Waline reaction. See https://waline.js.org/reference/client/props.html#reaction
     # Gitalk comment system. See https://github.com/gitalk/gitalk
     gitalk:
       clientID: 47f4a02c67e1dbf02479 # GitHub Application Client ID
